@@ -203,6 +203,13 @@ h3 {
     position: relative;
     padding-top: 60px;
     margin-top: -60px;
+    letter-spacing: 1px;
+}
+
+#campaigns img {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 6px;
 }
 
 .campaign-slide {
@@ -211,9 +218,9 @@ h3 {
     justify-content: space-between;
 }
 
-.swiper-pointer-events {
+/* .swiper-pointer-events {
     touch-action: pan-y;
-}
+} */
 
 .swiper {
     margin-left: auto;
@@ -236,11 +243,12 @@ h3 {
 }
 
 .slide-card {
-    width: 30%;
+    width: 50%;
     border: solid 3px #500c7a;
     background: #fff;
     height: 536px;
     position: relative;
+    justify-content: space-between;
 }
 
 .gradient {
@@ -253,10 +261,11 @@ h3 {
 }
 
 .slide-card a {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
     position: relative;
+    justify-content: space-between;
 }
 
 .campaign-logo {
@@ -268,10 +277,10 @@ h3 {
     justify-content: center;
 }
 
-element.style {
+/* element.style {
     transform: translate3d(-935px, 0px, 0px);
     transition-duration: 0ms;
-}
+} */
 
 #arkemyr {
     background-image: url(../img/castle.jpg);
@@ -342,17 +351,18 @@ element.style {
     margin-right: -2px;
 }
 
-.ri-arrow-left-line {
+.ri-arrow-left-line .ri-arrow-right-line {
     font-family: 'remixicon' !important;
     font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    color: #500c7a;
 }
 
 .ri-arrow-left-line:before {
-    content: "\ea60";
+    content: "←";
 }
 
+.ri-arrow-right-line:before {
+    content: "→";
+}
 
 #newsletter {
     text-align: center;
@@ -412,7 +422,8 @@ element.style {
     border:  none;
     color: white;
     font-family: 'Syne', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 18px;
     border-radius: 0px 8px;
     margin-left: 10px;
     cursor: pointer;
@@ -439,27 +450,21 @@ element.style {
     h3 {
         font-size: 26px;
     }
-    .float-img {
+    .vector-img {
         display: none;
     }
     #about {
         padding-top: 50px;
     }
-    .about-content p {
+    .about-box p {
         font-size: 14px;
         line-height: 18px;
     }
-    .about-content h3 {
+    .about-box h3 {
         margin-bottom: 15px;
     }
-    .about-content blockquote {
-        margin: 10px 0;
-        border-left: none;
-        border-top: solid 4px #d9c1a4;
-        background: #fff;
-        padding: 10px;
-    }
-    #campaign {
+
+    #campaigns {
         margin-top: 50px;
     }
     .campaign-slide {
