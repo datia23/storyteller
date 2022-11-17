@@ -413,7 +413,7 @@ element.style {
     color: white;
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    border-radius: 0px 5px;
+    border-radius: 0px 8px;
     margin-left: 10px;
     cursor: pointer;
 }   
