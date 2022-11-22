@@ -444,7 +444,8 @@ h3 {
 #attributions {
     background:  #220b6ede;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
+    text-align: center;
 }
 
 #attributions a {
