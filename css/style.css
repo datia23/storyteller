@@ -242,6 +242,11 @@ h3 {
     box-sizing: content-box;
 }
 
+.swiper-slide {
+    flex-shrink: 0;
+    transition-property: transform;
+}
+
 .slide-card {
     width: 50%;
     border: solid 3px #500c7a;
@@ -351,6 +356,9 @@ h3 {
     margin-right: -2px;
 }
 
+.slide-next {
+    margin-left: -2px;
+}
 .ri-arrow-left-line .ri-arrow-right-line {
     font-family: 'remixicon' !important;
     font-style: normal;
@@ -433,6 +441,26 @@ h3 {
     background: #500c7a;
 }
 
+#attributions {
+    background:  #220b6ede;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#attributions a {
+    text-decoration: none;
+    border-bottom: 0.1px solid #faca45;
+    box-shadow: inset 0 -2px 0 #faca45;
+    color: inherit;
+    transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+
+#attributions a:hover {
+    background: #faca45;
+    color: #500c7a;
+}
+
+@media only screen and (max-width: 1440px) {}
 @media only screen and (max-width: 900px) {
     #hero {
         padding: 0;
@@ -443,7 +471,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 320px) {
     body {
         font-size: 14px;
     }

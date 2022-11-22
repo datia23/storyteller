@@ -121,13 +121,20 @@
             </form>
         </div>
     </div>
-
-<!-- <script src="js/observer.js"></script>    
+    <div id="attributions">
+        <div class="newsletter">
+            <p>Attributions: assets by <a href="https://www.freepik.com/author/dgim-studio">dgim-studio</a>, <a
+                    href="https://www.freepik.com/author/upklyak">upklyak</a>, Dragon icons created by <a
+                    href="https://www.flaticon.com/free-icons/dragon">Freepik - Flaticon</a>
+        </div>
+    </div>
+    
+<script src="js/observer.js"></script>    
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper('.campaign-slide', {
-        slidesPerView: 1,
-        spaceBetween: 3,
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
         loop: true,
 
         // Navigation arrows
@@ -135,12 +142,19 @@
             nextEl: '.slide-next',
             prevEl: '.slide-prev',
         },
+
         breakpoints: {
-            640: {
-                slidesPerView: 2,
+            375: {
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
-            768: {
+
+            425: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            
+            600: {
                 slidesPerView: 2,
                 spaceBetween: 40,
             },
@@ -150,7 +164,7 @@
             },
         },
     }); 
-</script> -->
+</script>
 
 </body>
 </html>
